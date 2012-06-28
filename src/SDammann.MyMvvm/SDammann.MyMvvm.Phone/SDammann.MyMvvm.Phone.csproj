@@ -49,7 +49,7 @@
     <Reference Include="System.Net" />
     <Reference Include="mscorlib.extensions" />
     <Reference Include="TombstoneHelper">
-      <HintPath>..\SDammann.SimmieStatus\packages\WP7TombstoneHelper.2.5\lib\TombstoneHelper.dll</HintPath>
+      <HintPath>..\packages\WP7TombstoneHelper.2.5\lib\TombstoneHelper.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

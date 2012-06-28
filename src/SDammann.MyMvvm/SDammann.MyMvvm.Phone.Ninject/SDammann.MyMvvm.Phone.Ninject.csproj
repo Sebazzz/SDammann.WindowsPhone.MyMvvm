@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ninject">
-      <HintPath>..\SDammann.SimmieStatus\packages\Ninject.3.0.1.10\lib\sl4-windowsphone71\Ninject.dll</HintPath>
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\sl4-windowsphone71\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows" />
     <Reference Include="system" />
