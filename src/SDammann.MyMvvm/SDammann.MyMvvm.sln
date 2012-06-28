@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm", "SDammann.MyMvvm\SDammann.MyMvvm.csproj", "{AA77BF7A-693F-4E03-A519-D521410BAAAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm.Phone", "SDammann.MyMvvm.Phone\SDammann.MyMvvm.Phone.csproj", "{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08C32A29-4259-479E-A935-2D94F89C60DB}"
+	ProjectSection(SolutionItems) = preProject
+		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA77BF7A-693F-4E03-A519-D521410BAAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA77BF7A-693F-4E03-A519-D521410BAAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA77BF7A-693F-4E03-A519-D521410BAAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA77BF7A-693F-4E03-A519-D521410BAAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

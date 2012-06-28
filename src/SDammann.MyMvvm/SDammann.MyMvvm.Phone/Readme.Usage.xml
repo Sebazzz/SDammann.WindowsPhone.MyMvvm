@@ -1,0 +1,52 @@
+﻿<myMvvm:ViewModelPhonePage
+    x:Class="WPowne7.SoundFloit.PhoneApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:myMvvm="clr-namespace:SDammann.MyMvvm.Phone;assembly=SDammann.MyMvvm.Phone" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="clr-namespace:WPowne7.SoundFloit.PhoneApp.ViewModel" mc:Ignorable="d">
+
+  <!-- Paste something like the following in phone pages -->
+  <myMvvm:ViewModelPhonePage.Resources>
+    <ViewModel:MainPageViewModel x:Key="ViewModel" d:IsDataSource="true" />
+  </myMvvm:ViewModelPhonePage.Resources>
+  <myMvvm:ViewModelPhonePage.DataContext>
+    <Binding Source="{StaticResource ViewModel}"/>
+  </myMvvm:ViewModelPhonePage.DataContext>
+
+  <!--
+  Paste something like this in code-behind:
+  
+        /// <summary>
+        ///   Gets the view model for this page
+        /// </summary>
+        private MainPageViewModel ViewModel {
+            [DebuggerStepThrough]
+            get { return (MainPageViewModel) this.ViewModelBase; }
+        }
+
+
+And for the view model:
+
+        [Inject] // inject using DI container
+        [EditorBrowsable(EditorBrowsableState.Advanced)] // hide it from Expression Blend
+        public IAdvancedComponent Engine { get; set; }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainPageViewModel"/> class.
+        /// </summary>
+        public MainPageViewModel() {
+            // TODO: do common initialization
+
+            // set-up design time data if necessary
+            if (IsInDesignMode) {
+                // TODO: do design-time initialization
+            }
+        }
+  
+  -->
+
+</myMvvm:ViewModelPhonePage>
