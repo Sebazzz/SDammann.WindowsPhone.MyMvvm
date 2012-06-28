@@ -52,6 +52,9 @@
     <Reference Include="mscorlib.extensions" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Dependency.cs" />
     <Compile Include="NinjectServiceResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +63,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.csproj">
+      <Project>{B6024D89-6669-4139-B741-ADBFFFF2ECD5}</Project>
+      <Name>SDammann.Utils.Base</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SDammann.MyMvvm.Phone\SDammann.MyMvvm.Phone.csproj">
       <Project>{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}</Project>
       <Name>SDammann.MyMvvm.Phone</Name>
@@ -67,10 +74,6 @@
     <ProjectReference Include="..\SDammann.MyMvvm\SDammann.MyMvvm.csproj">
       <Project>{AA77BF7A-693F-4E03-A519-D521410BAAAF}</Project>
       <Name>SDammann.MyMvvm</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SDammann.Utils.Base\SDammann.Utils.Base.csproj">
-      <Project>{B6024D89-6669-4139-B741-ADBFFFF2ECD5}</Project>
-      <Name>SDammann.Utils.Base</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
