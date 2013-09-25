@@ -100,11 +100,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.csproj">
+    <ProjectReference Include="..\..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.wp8.csproj">
       <Project>{B6024D89-6669-4139-B741-ADBFFFF2ECD5}</Project>
       <Name>SDammann.Utils.Base</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDammann.Utils\src\SDammann.Utils\SDammann.Utils.csproj">
+    <ProjectReference Include="..\..\SDammann.Utils\src\SDammann.Utils\SDammann.Utils.wp8.csproj">
       <Project>{0D5DC7FA-6BFA-4B3B-B8E0-0AB525AA6C4D}</Project>
       <Name>SDammann.Utils</Name>
     </ProjectReference>

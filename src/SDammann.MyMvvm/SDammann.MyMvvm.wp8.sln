@@ -1,20 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm", "SDammann.MyMvvm\SDammann.MyMvvm.csproj", "{AA77BF7A-693F-4E03-A519-D521410BAAAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm.wp8", "SDammann.MyMvvm\SDammann.MyMvvm.wp8.csproj", "{AA77BF7A-693F-4E03-A519-D521410BAAAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm.Phone", "SDammann.MyMvvm.Phone\SDammann.MyMvvm.Phone.csproj", "{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm.Phone.wp8", "SDammann.MyMvvm.Phone\SDammann.MyMvvm.Phone.wp8.csproj", "{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08C32A29-4259-479E-A935-2D94F89C60DB}"
 	ProjectSection(SolutionItems) = preProject
 		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm.Phone.Ninject", "SDammann.MyMvvm.Phone.Ninject\SDammann.MyMvvm.Phone.Ninject.csproj", "{4FCA73A9-9477-403F-8BA7-672529C6C98D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm.Phone.Ninject.wp8", "SDammann.MyMvvm.Phone.Ninject\SDammann.MyMvvm.Phone.Ninject.wp8.csproj", "{4FCA73A9-9477-403F-8BA7-672529C6C98D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.Utils", "..\SDammann.Utils\src\SDammann.Utils\SDammann.Utils.csproj", "{0D5DC7FA-6BFA-4B3B-B8E0-0AB525AA6C4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.Utils.wp8.", "..\SDammann.Utils\src\SDammann.Utils\SDammann.Utils.wp8.csproj", "{0D5DC7FA-6BFA-4B3B-B8E0-0AB525AA6C4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.Utils.Base", "..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.csproj", "{B6024D89-6669-4139-B741-ADBFFFF2ECD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.Utils.Base.wp8.", "..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.wp8.csproj", "{B6024D89-6669-4139-B741-ADBFFFF2ECD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
