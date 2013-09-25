@@ -21,6 +21,8 @@
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -110,20 +112,21 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.wp8.csproj">
       <Project>{B6024D89-6669-4139-B741-ADBFFFF2ECD5}</Project>
-      <Name>SDammann.Utils.Base</Name>
+      <Name>SDammann.Utils.Base.wp8</Name>
     </ProjectReference>
     <ProjectReference Include="..\SDammann.MyMvvm.Phone\SDammann.MyMvvm.Phone.wp8.csproj">
       <Project>{205AAAB0-19B6-42F9-A619-50DDAF5FB6A6}</Project>
-      <Name>SDammann.MyMvvm.Phone</Name>
+      <Name>SDammann.MyMvvm.Phone.wp8</Name>
     </ProjectReference>
     <ProjectReference Include="..\SDammann.MyMvvm\SDammann.MyMvvm.wp8.csproj">
       <Project>{AA77BF7A-693F-4E03-A519-D521410BAAAF}</Project>
-      <Name>SDammann.MyMvvm</Name>
+      <Name>SDammann.MyMvvm.wp8</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <ProjectExtensions />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

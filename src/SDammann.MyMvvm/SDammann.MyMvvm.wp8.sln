@@ -12,9 +12,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.MyMvvm.Phone.Ninject.wp8", "SDammann.MyMvvm.Phone.Ninject\SDammann.MyMvvm.Phone.Ninject.wp8.csproj", "{4FCA73A9-9477-403F-8BA7-672529C6C98D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.Utils.wp8.", "..\SDammann.Utils\src\SDammann.Utils\SDammann.Utils.wp8.csproj", "{0D5DC7FA-6BFA-4B3B-B8E0-0AB525AA6C4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.Utils.wp8", "..\SDammann.Utils\src\SDammann.Utils\SDammann.Utils.wp8.csproj", "{0D5DC7FA-6BFA-4B3B-B8E0-0AB525AA6C4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.Utils.Base.wp8.", "..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.wp8.csproj", "{B6024D89-6669-4139-B741-ADBFFFF2ECD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDammann.Utils.Base.wp8", "..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.wp8.csproj", "{B6024D89-6669-4139-B741-ADBFFFF2ECD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C1540A72-DE1A-4F9A-AC20-0B1034EDD131}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

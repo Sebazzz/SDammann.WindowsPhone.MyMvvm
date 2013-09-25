@@ -102,11 +102,11 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SDammann.Utils\src\SDammann.Utils.Base\SDammann.Utils.Base.wp8.csproj">
       <Project>{B6024D89-6669-4139-B741-ADBFFFF2ECD5}</Project>
-      <Name>SDammann.Utils.Base</Name>
+      <Name>SDammann.Utils.Base.wp8</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SDammann.Utils\src\SDammann.Utils\SDammann.Utils.wp8.csproj">
       <Project>{0D5DC7FA-6BFA-4B3B-B8E0-0AB525AA6C4D}</Project>
-      <Name>SDammann.Utils</Name>
+      <Name>SDammann.Utils.wp8</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
