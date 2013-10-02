@@ -1,4 +1,5 @@
 ﻿namespace SDammann.MyMvvm.Phone {
+    using System;
     using System.ComponentModel;
     using System.Diagnostics;
     using System.Windows.Data;
@@ -50,7 +51,7 @@
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
             if (this.UseThombStoneHelper) {
-                this.RestoreState();
+                this.RestoreStateSafe();
             }
 
             // only inject and restore state in case we have been recreated as a page (after thombstoning)
@@ -70,6 +71,15 @@
 
             this.isConstructorCalled = false;
             base.OnNavigatedTo(e);
+        }
+
+        private bool RestoreStateSafe() {
+            try {
+                this.RestoreState();
+                return true;
+            } catch (Exception) {
+                return false;
+            }
         }
 
         /// <summary>
