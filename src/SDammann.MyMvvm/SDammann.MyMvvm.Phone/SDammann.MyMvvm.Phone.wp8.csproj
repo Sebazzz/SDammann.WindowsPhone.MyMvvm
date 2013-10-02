@@ -99,7 +99,8 @@
       <HintPath>..\packages\PropertyChanged.Fody.1.41.0.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\PropertyChanged.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="TombstoneHelper">
+    <Reference Include="TombstoneHelper, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\WP7TombstoneHelper.2.5\lib\TombstoneHelper.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -152,6 +153,6 @@
   </Target>
   -->
   <Target Name="AfterCompile" />
-  <Import Project="Fody.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="Fody.targets" />
 </Project>
