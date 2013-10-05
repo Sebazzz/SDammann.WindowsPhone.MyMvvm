@@ -1,3 +1,3 @@
 [submodule "src/SDammann.Utils"]
 	path = src/SDammann.Utils
-	url = https://github.com/Sebazzz/SDammann.WindowsPhone.Utils.git
+	url = git@github.com:Sebazzz/SDammann.WindowsPhone.Utils.git
