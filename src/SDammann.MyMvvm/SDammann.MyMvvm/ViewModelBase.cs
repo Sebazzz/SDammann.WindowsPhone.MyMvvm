@@ -8,8 +8,8 @@
     ///   Represents the base class of all view models, for both pages or classes
     /// </summary>
     public abstract class ViewModelBase : DependencyObject, INotifyPropertyChanged {
-        private readonly bool isInDesignMode;
-        private static bool? IsInDesignModePrivate;
+        private readonly bool _isInDesignMode;
+        private static bool? _IsInDesignMode;
 
         /// <summary>
         ///   Gets if we are in design mode
@@ -18,35 +18,37 @@
             [DebuggerStepThrough]
             get {
                 bool designMode;
-                if (IsInDesignModePrivate == null) {
-                    IsInDesignModePrivate = designMode = DesignerProperties.IsInDesignTool;
+                if (_IsInDesignMode == null) {
+                    _IsInDesignMode = designMode = DesignerProperties.IsInDesignTool;
                 } else {
-                    designMode = IsInDesignModePrivate.Value;
+                    designMode = _IsInDesignMode.Value;
                 }
 
                 return designMode;
             }
         }
 
+        public string Test { get; protected set; }
+
         /// <summary>
         ///   Gets if we are in design mode
         /// </summary>
         protected bool IsInDesignMode {
             [DebuggerStepThrough]
-            get { return this.isInDesignMode; }
+            get { return this._isInDesignMode; }
         }
 
         /// <summary>
         ///   Initializes a new instance of the <see cref="ViewModelBase" /> class. Make sure to always call this constructor.
         /// </summary>
         protected ViewModelBase() {
-            this.isInDesignMode = DesignerProperties.GetIsInDesignMode(this);
-            IsInDesignModePrivate = this.isInDesignMode;
+            this._isInDesignMode = DesignerProperties.GetIsInDesignMode(this);
+            _IsInDesignMode = this._isInDesignMode;
         }
 
         #region INotifyPropertyChanged Members
 
-#pragma warning disable 0067 //disable event is never used warning as we use de INotifyPropertyWeaver
+#pragma warning disable 0067 //disable event is never used warning as we use de Fody.PropertyChanged
         /// <summary>
         ///   Occurs when a property value changes.
         /// </summary>

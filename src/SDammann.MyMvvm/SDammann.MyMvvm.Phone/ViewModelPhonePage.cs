@@ -18,8 +18,11 @@
     /// used at runtime and resolved by the dependency injection you plug in via the <see cref="ServiceResolver"/>
     /// </remarks>
     public class ViewModelPhonePage : PhoneApplicationPage {
+        /// <summary>
+        /// Gets the current progress indicator
+        /// </summary>
         protected readonly ProgressIndicator ProgressIndicator;
-        private bool isConstructorCalled;
+        private bool _isConstructorCalled;
 
         /// <summary>
         /// Gets or sets whether or not to use the windows phone thombstone helper
@@ -35,6 +38,10 @@
         }
 
 
+        /// <summary>
+        /// Called just before a page is no longer the active page in a frame.
+        /// </summary>
+        /// <param name="e">An object that contains the event data.</param>
         protected override void OnNavigatingFrom(NavigatingCancelEventArgs e) {
             if (e.NavigationMode != NavigationMode.Back) {
                 this.State.Clear();
@@ -49,13 +56,17 @@
             base.OnNavigatingFrom(e);
         }
 
+        /// <summary>
+        /// Called when a page becomes the active page in a frame.
+        /// </summary>
+        /// <param name="e">An object that contains the event data.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e) {
             if (this.UseThombStoneHelper) {
                 this.RestoreStateSafe();
             }
 
             // only inject and restore state in case we have been recreated as a page (after thombstoning)
-            if (isConstructorCalled) {
+            if (this._isConstructorCalled) {
                 ServiceResolver.InjectInstance(this.ViewModelBase);
                 this.ViewModelBase.OnRuntimeInitialize();
                 this.ViewModelBase.RestoreState(this.State);
@@ -69,7 +80,7 @@
                 this.ViewModelBase.PageRefresh();
             }
 
-            this.isConstructorCalled = false;
+            this._isConstructorCalled = false;
             base.OnNavigatedTo(e);
         }
 
@@ -91,6 +102,10 @@
             return e.NavigationMode == NavigationMode.New || (e.NavigationMode == NavigationMode.Back && !e.IsNavigationInitiator);
         }
 
+        /// <summary>
+        /// Called when the hardware Back button is pressed. Executes the view model <see cref="PageViewModelBase.BackKeyPressCommand"/>
+        /// </summary>
+        /// <param name="e">Set e.Cancel to true to indicate that the request was handled by the application.</param>
         protected override void OnBackKeyPress(CancelEventArgs e) {
             this.ViewModelBase.BackKeyPressCommand.Execute(e);
         }
@@ -100,7 +115,7 @@
         /// </summary>
         public ViewModelPhonePage() {
             this.UseThombStoneHelper = true;
-            this.isConstructorCalled = true;
+            this._isConstructorCalled = true;
 
             ProgressIndicator = new ProgressIndicator();
 

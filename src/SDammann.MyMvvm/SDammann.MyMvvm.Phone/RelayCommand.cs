@@ -109,6 +109,11 @@
             remove { }
         }
 
+        /// <summary>
+        /// Allows casting from delegate to relay command
+        /// </summary>
+        /// <param name="methodCall"></param>
+        /// <returns></returns>
         public static implicit operator RelayCommand<TParameter>(Action<TParameter> methodCall) {
             return new RelayCommand<TParameter>(methodCall);
         }
