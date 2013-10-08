@@ -28,8 +28,6 @@
             }
         }
 
-        public string Test { get; protected set; }
-
         /// <summary>
         ///   Gets if we are in design mode
         /// </summary>
