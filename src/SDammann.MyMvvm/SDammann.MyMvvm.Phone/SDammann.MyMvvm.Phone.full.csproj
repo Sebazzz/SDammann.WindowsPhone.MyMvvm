@@ -7,8 +7,8 @@
     <ProjectGuid>{6FAD7DFB-C0BC-4D7E-BCF6-27C63A8C2E63}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SDammann.MyMvvm.Phone.full</RootNamespace>
-    <AssemblyName>SDammann.MyMvvm.Phone.full</AssemblyName>
+    <RootNamespace>SDammann.MyMvvm.Phone</RootNamespace>
+    <AssemblyName>SDammann.MyMvvm.Phone</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
